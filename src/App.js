@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom";
-import Home from "./scenes/Home";
+import Home from "./scenes/Home/Home";
 
 // Scroll to top on route change
 const ScrollToTop = () => {
