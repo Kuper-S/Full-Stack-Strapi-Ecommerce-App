@@ -11,7 +11,8 @@ import cartReducer from "./state"
 
 
 const store = configureStore({
-  reducer: { cartReducer },
+  reducer: { cart:
+    cartReducer },
 });
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
