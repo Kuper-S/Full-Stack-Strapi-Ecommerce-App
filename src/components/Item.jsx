@@ -31,6 +31,8 @@ function Item({item , width}) {
   return (
    <Box width ={width}>
          <Box position = "relative" 
+        sx={{ borderRadius: "3.9rem",overflow:"overlay", shades: "0 0 10px 0 rgba(0,0,0,0.2)"}}
+
          onMouseOver={() => setIsHoverd(true)} 
          onMouseOut = {() => setIsHoverd(false)}
          >
@@ -54,13 +56,14 @@ function Item({item , width}) {
                 <Box
                 display="flex"
                 justifyContent="space-between"
+                
                 // AMOUNMT
                 >
                     <Box 
                     display="flex"
                     alignItems="center"
                     backgroundColor={shades.neutral[100]}
-                    borderRadius="4px"
+                    borderRadius="5px"
                     >
                      <IconButton
                           onClick={() =>
@@ -90,7 +93,7 @@ function Item({item , width}) {
                 </Box>
             </Box>
          </Box>
-         <Box mt="3px">
+         <Box mt="4px">
             <Typography variant="subtitle2" color={neutral.dark}>
             {/* Replace the Category to the right FORMAT! */}
                 {category.replace(/([A-Z])/g, " $1")
