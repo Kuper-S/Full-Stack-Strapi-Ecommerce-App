@@ -46,7 +46,7 @@ function Item({item , width}) {
                 style={{ cursor: "pointer" }}
             />
             <Box
-            display={isHoverd ? "blocked" : "none"}
+            display={isHoverd ? "block" : "none"}
             position="absolute"
             bottom="10%"
             left="0"

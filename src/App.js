@@ -6,7 +6,7 @@ import Checkout from "./scenes/checkout/Checkout";
 import ItemDetails from "./scenes/itemDetails/ItemDetails";
 import Confirmation from "./scenes/checkout/Confirmation";
 import CartMenu from "./scenes/global/CartMenu";
-
+import Footer from "./scenes/global/Footer";
 // Scroll to top on route change
 const ScrollToTop = () => {
   const { pathname } = useLocation();
@@ -34,6 +34,7 @@ function App() {
           
         </Routes>
         <CartMenu/>
+        <Footer/>
       </Router>
     </div>
   );
